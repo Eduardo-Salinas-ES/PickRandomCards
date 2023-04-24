@@ -15,10 +15,11 @@ namespace PickRandomCards
             
 
             Console.Write("Hello there, Enter a number of cards to generate: ");
-
+            // Read user input, takes information, saves as string value
             line = Console.ReadLine();
 
-            if(int.TryParse(line, out numOfCards))
+            // if the string input can be parsed to an int, execute what is inside the if statement
+            if (int.TryParse(line, out numOfCards))
             {
                 // CardPicker.PickSomeCards(numOfCards) returns a string array that contains our cards
                 // so here we display each card in the array of cards

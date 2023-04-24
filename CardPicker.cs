@@ -48,12 +48,15 @@ namespace PickRandomCards
         }
         public static string[] PickSomeCards(int numberOfCards)
         {
+            // Create dynamic array of strings for our cards
             string[] pickedCards = new string[numberOfCards];
             for(int i = 0; i < numberOfCards; i++)
             {
+                // Create the string value for each card with a value and suit
                 pickedCards[i] = RandomValue() + " of " + RandomSuit();
             }
 
+            //return the array of cards
             return pickedCards;
         }
 
